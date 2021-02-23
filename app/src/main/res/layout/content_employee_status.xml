@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.gridlayout.widget.GridLayout
+            app:columnCount="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/fbUsename"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fbZucitechId"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fbDeviceId"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/fbdateOfIssue"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>
