@@ -47,13 +47,13 @@ class UserAdapter(mContext: Context, mUsers:List<User>): RecyclerView.Adapter<Us
         val user: User = mUsers[position]
         holder.userNameTxt.text = user!!.getUserName()
         holder.userZucitectIDTxt.text = user!!.getZucitechID()
-        holder.userDeviceIDTxt.text = user!!.getDeviceID()
-        holder.userDateOfIssue.text = user!!.getDateOfIssue()
+        holder.userDeviceIDTxt.text = user!!.getdeviceID1().keys.toString()
+        holder.userDateOfIssue.text = user!!.getdeviceID1().values.toString()
 
 
 
         if(user!!.getDateOfIssue().isNullOrBlank())
-            Log.i("zucitechID","emty string")
+            Log.i("zucitechID","empty string")
         else
             Log.i("zucitechID",user!!.getDateOfIssue().toString())
 

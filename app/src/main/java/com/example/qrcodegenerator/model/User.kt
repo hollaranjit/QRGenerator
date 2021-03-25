@@ -4,18 +4,18 @@ class User {
     private var uid: String = ""
     private var userName: String = ""
     private var zucitechID: String = ""
-    private var deviceID: String = ""
     private var dateOfIssue:String = ""
+    lateinit var deviceID :HashMap<String,Any>
+    //private var previousDevice:String = ""
 
     constructor()
 
-    constructor(uid: String, userName: String, zucitechID: String,deviceID: String,dateOfIssue:String) {
+    constructor(uid: String, userName: String, zucitechID: String,dateOfIssue:String,deviceID:HashMap<String,Any>) {
         this.uid = uid
         this.userName = userName
         this.zucitechID = zucitechID
-        this.deviceID = deviceID
         this.dateOfIssue = dateOfIssue
-
+        this.deviceID = deviceID
     }
 
     //--------------------------------
@@ -64,17 +64,6 @@ class User {
 
     //---------------------------------
 
-    fun getDeviceID():String?
-    {
-        return deviceID
-    }
-
-
-    fun setDeviceID(deviceID:String)
-    {
-        this.deviceID = deviceID
-    }
-
     fun getDateOfIssue():String?
     {
         return dateOfIssue
@@ -87,4 +76,36 @@ class User {
         this.dateOfIssue = dateOfIssue
     }
 
+
+    //-------------------------------------
+
+    fun getdeviceID1():HashMap<String,Any>
+    {
+        return deviceID
+    }
+
+
+    fun setdeviceID1(deviceZid:HashMap<String,Any>)
+    {
+        this.deviceID = deviceID
+    }
+
+
+
+
+    //------------------------------------
+
+//    fun getPreviousDevice():String?
+//    {
+//        return previousDevice
+//    }
+//
+//
+//    fun setPreviousDevice(previousDevice:String)
+//    {
+//        this.previousDevice = previousDevice
+//    }
 }
+
+
+

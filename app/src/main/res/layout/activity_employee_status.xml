@@ -35,5 +35,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
+    <ImageView
+        android:id="@+id/imgPdf"
+        android:layout_width="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_download"
+        tools:ignore="VectorDrawableCompat" />
+
 
 </RelativeLayout>
